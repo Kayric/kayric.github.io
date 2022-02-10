@@ -12,8 +12,9 @@
   </head>
   <body>
 <!-- Nav bar -->
-<nav class="navbar navbar-expand sticky-top navbar-dark bg-dark">
-<ul class="nav justify-content-center">
+<nav class="navbar sticky-top bg-light container">
+  <div class="container justify-content-center">
+<ul class="nav nav-pills"> 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#About-me">About me</a>
         </li>
@@ -32,22 +33,32 @@
       </ul>
     </div>
     </nav>
-<!-- Heading -->
-<div class="container">
+<!-- About Me -->
 <a id="About-me"></a>
-  <div class="clearfix">
-      <img src="https://media-exp1.licdn.com/dms/image/C5603AQFlGVlE56c3tQ/profile-displayphoto-shrink_800_800/0/1642402632427?e=1649894400&v=beta&t=dmKR9Ufj9vdaWlpAwlPfVAdR31-EtMPEYIfQcqB5Zvs" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" alt="Selfie">
-<!-- Jumbotron -->
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Hello everyone</h1>
-          <p class="col-md-8 fs-4">My name is Kirkrapee Techavanich (Kirk), I have graduated from Silpakorn University, Bachelor degree of Arts, Anthropology Major.
-          I have been working in administration field since 2012 however in December 2018 I have a chance to transfer to IT related field as Application Support until now.</p>
+<div class="container">
+  <div class="card">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-5 order-md-1">
+        <img src="Img/Linkedin.jfif" class="img-fluid mx-auto rounded-start" alt="linkedin">
+      </div>
+      <div class="col">
+        <div class="card-body">
+          <h5 class="card-title">Hello Everyone, </h5>
+          <p class="card-text"> My name is Kirkrapee Techavanich, you can call me <em>Kirk</em>
+            <br><br>
+            I have been working in administration field since 2012 
+            <br><br>
+            however in December 2018 I got an opportunity to internal transfer to became Application Support. 
+            <br><br>
+            Currently, I'm participating in Junior Software Developer bootcamp. 
+            <br><br>
+            by Generation Thailand x Skooldio</p>
+             
         </div>
       </div>
+    </div>
+  </div>
 </div>
-</div>
-
 <!-- Education -->
 <a id="Education"></a>
 <div class="container">
@@ -163,16 +174,24 @@
           </div>
         </div>
       </div>
-</div>
-</div>
-<!-- Contact -->
-<a id="Contact"></a>
-<div class="container">
-      <div class="card bg-info">
-        <div class="card-header">Contact</div>
+<!-- contact -->
+<div class="container py-4">
+      <div class="row align-items-md-stretch">
+        <div class="col">
+          <div class="h-100 p-5 text-black bg-light rounded-3">
+            <a id="Contact"></a>
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="https://www.linkedin.com/in/kirkrapee/" target="_blank">Linkedin</a></li>
+              <li><a href="https://github.com/Kayric/kayric.github.io" target="_blank">Github</a></li>
+              <li><a href="mailto: kirkrapee@gmail.com" target="_blank">Email</a></li>
+            </ul>
+            <button class="btn btn-outline-dark" type="button">I'm looking forward to hearing from you.</button>
+          </div>
+        </div>
       </div>
-      <button class="btn btn-primary btn-lg" type="button">kirkrapee@gmail.com</button>
-      <button class="btn btn-primary btn-lg" type="button">0846812951</button>
+    </div>
+</div>
 </div>
   </body>
 </html>
