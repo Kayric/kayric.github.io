@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css" />
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="./src/style/style.css" />
-    
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="src/style/main.css">
-    
-        <title>Goal to fit-Current activity</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./src/style/style.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="src/style/main.css">
+
+    <title>Goal to fit-Current activity</title>
+</head>
 
 <body>
-    <nav>
-        <div>
-            <div>Yoga</div>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container">
+            <a class="navbar-brand">Current activity</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./activity_report.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./shopping_list.html">Shoplist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./meal_plan.html">Meal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./username.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li>
-                <i></i>
-                <a href="#">Homepage</a>
-            </li>
-            <li>
-                <i></i>
-                <a href="#">Workout</a>
-            </li>
-            <li>
-                <i></i>
-                <a href="#">Meal</a>
-            </li>
-            <li>
-                <i></i>
-                <a href="#">Profile</a>
-            </li>
-            <li>
-                <i></i>
-                <a href="#">Logout</a>
-            </li>
-        </ul>
-    </nav>
+    </div>
+    <!-- current activity -->
     <section class="current activity">
-        <img src="./src/img/yoga.png">
-        <div>Set timer</div>
-        <p> 00:30:00 </p>
-        <div>
-            <img src="./src/img/video_icon.png">
-            <img src="./src/img/gallery.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p>Logo</p>
+                </div>
+                <div class="col-6">
+                    <div>Set timer</div>
+                    <p> 00:30:00 </p>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/video.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/image-gallery.png"/>
+                    </div>
+                    <button>start</button>
+                    <button>pause</button>
+                    <a href="./activity_report.html"><button>stop</button></a>
+                </div>
+            </div>
         </div>
-        <button>start</button>
-        <button>pause</button>
-        <button>stop</button>
     </section>
 
-
-    <footer>@Copy Right 2022 : Goal to fit</footer>
-
+<!-- footer -->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2022 : Goal to fit</p>
+    </footer>
+</div>
 </body>
 
 </html>
