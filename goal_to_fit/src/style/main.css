@@ -1,8 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap');
+/* css ในไฟล์นี้ เป็น Template การจัดวางของ Navbar และ Footer */
+/* และ กำหนด ขนาด ของ ฟอนต์ที่ใช้เท่านั้น */
+/* วิธีใช้ ขนาด ฟอนต์ ใช้คล้ายๆ Bootstrap คือ ดูชื่อคลาส และ ใส่ คลาสที่ html tag นั้น */
+/* เช่น */
+/* ต้องการให้ font
+/* ตัวหนึ่งมีความหนา ใช้คลาส bolder-font
+/* และ มีขนาดใหญ่เป็น title ใช้คลาส font-head */
 
-body {
-    font-family: 'Roboto', sans-serif;
-      }
+/* html จะเป็นแบบนี้ */
+/* 
+<div class="bolder-font font-head"> <<<<< เพิ่ม class เข้าไปแบบ Bootstrap
+    Text here
+</div>
+*/
+
+/* คลาส template หลัก จะอยู่ใน comment */
+
+/* สำหรับการตกแต่งอื่นๆ ให้ปรับแต่งที่ ไฟล์ css ไฟล์อื่น */
+/* สำหรับไฟล์นี้จะใช้ทุกคน ฉะนั้น หากมีคนใดคนหนึ่งปรับแต่ง */
+/* คนอื่นต้องปรับแต่งด้วย เพราะต้องมี template เหมือนกัน */
+
+/* หากต้องการเพิ่มหรือแก้ไขให้เหมาะสมขึ้น สามารถทำได้ และแจ้งให้ทุกคนทราบด้วย */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap');
 
 :root{
     --primary-background-color: #f6f6f6;
@@ -20,10 +39,17 @@ body {
     --primary-button-color: #72bb52;
     --secondary-button-color: #ca0000;
 
-    --primary-icon-color: #4d4d4d;
+    --primary-icon-color: #272727;
+    --secondary-icon-color: #9c9c9c;
     
     --primary-button-meal: #c0c0c0;
 }
+/*
+วิธีใช้
+li{
+    color: var(--primary-text-color);
+}
+*/
 
 *,*::after,*::before{
     padding: 0;
@@ -31,8 +57,157 @@ body {
     box-sizing: border-box;
 }
 
-/*
-วิธีใช้
-li{
+/* ----------------------------MAIN TEMPLATE---------------------------- */
+/* สีหลัก รอง ของ ข้อความ และ ไอคอน */
+.primary-text-color{
     color: var(--primary-text-color);
-}*/
+}
+.secondary-text-color{
+    color: var(--secondary-text-color);
+}
+.primary-icon-color{
+    color: var(--primary-icon-color);
+}
+.secondary-icon-color{
+    color: var(--secondary-icon-color);
+}
+/* สีหลัก รอง ของ ข้อความ และ ไอคอน */
+
+
+/* ตัวอักษร บาง หนา */
+.regular-font{
+    font-weight: 300;
+}
+.middle-font{
+    font-weight: 500;
+}
+.bolder-font{
+    font-weight: 900;
+}
+/* ตัวอักษร บาง หนา */
+
+
+
+/* font size */
+.font-head{
+    font-size: 1.8em;
+}
+.font-subhead{
+    font-size: 1em;
+}
+.font-detail{
+    font-size: 1em;
+}
+/* font size */
+/* ----------------------------MAIN TEMPLATE---------------------------- */
+
+
+a{
+    display: block;
+    text-decoration: none !important;
+    color: var(--secondary-text-color);
+}
+body{
+    font-family: Roboto, sans-serif;
+    height: 100%;
+    position: relative;
+}
+
+nav::after{ /* เส้นใต้ nav */
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-header{
+    padding-top: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.head-title,
+.head-title:visited,
+.menu-link,
+.menu-link:visited{
+    color: var(--secondary-text-color);
+}
+.head-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+}
+.head-title h2{
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+/* menu start */
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* reset margin ของ boostrap ใน tag ul */
+}
+.menu-list{
+    list-style: none;
+    margin-left: 10px;
+}
+.menu-link{
+    font-size: .9em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    color: var(--primary-icon-color);
+}
+.menu-link.btn-logout{
+    color: var(--primary-text-color);
+}
+.menu-name{
+    margin: 0 5px; /* reset margin-bottom ของ boostrap ใน tag p */
+    width: 100%;
+    margin-top: 1px;
+    text-align: center;
+}
+
+/* menu hover start */
+.menu-list:hover .menu-name{
+    font-weight: 500;
+}
+/* menu hover end */
+/* menu end */
+
+
+/* section start */
+section{
+    margin: 40px 0;
+}
+/* section end */
+
+
+
+/* footer start */
+footer{
+    position: absolute;
+    bottom: calc(0 - 0);
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    font-size: .9em;
+    font-weight: 300;
+}
+footer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+    border-top: 1px solid lightgray;
+    margin-bottom: 15px;
+}
+/* footer end */
