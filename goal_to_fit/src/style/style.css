@@ -3,3 +3,45 @@
 body {
 font-family: 'Roboto', sans-serif;
   }
+
+/*username*/
+
+/*sign_in*/
+
+/*sign_up*/
+
+/*forgot_password*/
+
+/*activity_report*/
+
+/*activity_selection*/
+
+/*current_activity*/
+
+.current_activity button {
+  margin: 10px; 
+}
+
+.current_activity i{
+  margin: 10px;
+}
+
+
+/*day_xx*/
+
+/*meal_plan*/
+
+.meal_plan button {
+  background-image: url(https://img.icons8.com/color/48/000000/shopaholic.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 60px;
+  width: 200px;
+}
+
+/*shopping_list*/
+
+ .shopping-item {
+   margin: 1rem auto;
+
+ }

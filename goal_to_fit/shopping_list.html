@@ -98,70 +98,55 @@
 
     <!-- MAIN CONTENT SECTION START -->
     <section class="main-section">
-        <div class="container">
-            <div class="row">
+        <div class="shopping_list container">
+            <div class="row row-cols-auto">
                 <!------------------------------- START COLUMN HERE ------------------------------->
-                <div>
-                    <button>Week 1</button>
-                    <button>Week 2</button>
-                    <button>Week 3</button>
-                    <button>Week 4</button>
-                    <button>Week 5</button>
-                </div>
-                <div>
-                    <img src="https://img.icons8.com/color/48/000000/bread.png" />
-                </div>
-                <div>
-                    <p>GRAINS, CEREALS & RICE</p>
-                    <ul>
-                        <li>Brown rice and noodles</li>
-                        <li>Oatmeal</li>
-                    </ul>
-                    <form>
+                <div class="col"><button type="button" class="btn btn-danger">Week 1</label></div>
+                <div class="col"><button type="button" class="btn btn-danger">Week 2</button></div>
+                <div class="col"><button type="button" class="btn btn-danger">Week 3</button></div>
+                <div class="col"><button type="button" class="btn btn-danger">Week 4</button></div>
+                <div class="col"><button type="button" class="btn btn-danger">Week 5</button></div>
+            </div>
+            <div class="shopping-item">
+                <div class="row row-cols-auto">
+                    <div class="col align-self-center">
+                        <img src="https://img.icons8.com/color/48/000000/bread.png" />
+                        <h3>GRAINS, CEREALS & RICE</h3>
+                        <ul>
+                            <p>Brown rice and noodles</p>
+                            <p>Oatmeal</p>
+                        
                         <input type="checkbox" id="bread" name="bread" value="bread">
-                    </form>
-                </div>
+                        </ul>
 
-                <div>
-                    <img src="https://img.icons8.com/color/48/000000/thanksgiving.png" />
-                </div>
-                <div>
-                    <p>MEAT & SEAFOOD</p>
-                    <ul>
-                        <li>Chicken, Fish</li>
-                        <li>Any lean meat</li>
-                    </ul>
-                    <form>
+                        <img src="https://img.icons8.com/color/48/000000/thanksgiving.png" />
+                        <h3>MEAT & SEAFOOD</h3>
+                        <ul>
+                            <p>Chicken, Fish</p>
+                            <p>Any lean meat</p>
+                        
                         <input type="checkbox" id="meat" name="meat" value="meat">
-                    </form>
-                </div>
-
-                <div>
-                    <img src="https://img.icons8.com/color/48/000000/broccoli.png" />
-                </div>
-                <div>
-                    <p>VEGETABLES</p>
-                    <ul>
-                        <li>Beans, Corn, Potatoes</li>
-                        <li>Green Vegetables</li>
                     </ul>
-                    <form>
+                    </div>
+                    <div class="col align-self-center">
+                        <img src="https://img.icons8.com/color/48/000000/broccoli.png" />
+                        <h3>VEGETABLES</h3>
+                        <ul>
+                            <p>Beans, Corn, Potatoes</p>
+                            <p>Green Vegetables</p>
+               
                         <input type="checkbox" id="vegetable" name="vegetable" value="vegetable">
-                    </form>
-                </div>
-
-                <div>
-                    <img src="https://img.icons8.com/color/48/000000/whole-apple.png" />
-                </div>
-                <div>
-                    <p>FRESH FRUITS</p>
-                    <ul>
-                        <li>Grapefruits or oranges</li>
-                        <li>Fruits (apple, pear, banana, etc)</li>
                     </ul>
-                    <form>
+
+                        <img src="https://img.icons8.com/color/48/000000/whole-apple.png" />
+                        <h3>FRESH FRUITS</h3>
+                        <ul>
+                            <p>Grapefruits or oranges</p>
+                            <p>Fruits (apple, pear, banana, etc)</p>
+                            
                         <input type="checkbox" id="apple" name="apple" value="apple">
-                    </form>
+                    </ul>
+                    </div>
                 </div>
                 <!------------------------------- END COLUMN HERE ------------------------------->
             </div>
