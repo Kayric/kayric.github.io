@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+* {
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(123deg, pink, skyblue);
+    color: black;
+    margin: 0 auto;
+    
+}
+button {
+    height:50px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 40px;
+    background-image: linear-gradient(180deg, black 1%, blue 99%);
+    color: ivory;
+    margin: 10px;
+}
+
+div {
+    margin: 40px;
+}
